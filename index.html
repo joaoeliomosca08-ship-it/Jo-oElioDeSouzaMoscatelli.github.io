@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia para Pessoas com Aspecto Autista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            padding: 30px 20px;
+        }
+        
+        h1 {
+            color: #000000;
+            font-size: 2.5em;
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .intro-text {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .page-count {
+            background-color: #f8f8f8;
+            border-left: 5px solid #333;
+            padding: 20px;
+            margin: 30px 0;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+        
+        .nav-button {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            background-color: #333333;
+            transform: translateY(-3px);
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ccc;
+            text-align: center;
+            font-weight: 700;
+            color: #444;
+        }
+        
+        @media (max-width: 600px) {
+            .nav-links {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GUIA PARA PESSOAS COM ASPECTO AUTISTA</h1>
+        
+        <div class="intro-text">
+            Bem-vindo(a) a este espaço de compreensão e acolhimento. Este livro foi criado como um farol para aqueles que navegam pelo espectro autista, seja em primeira pessoa ou como aliado, familiar ou profissional.
+        </div>
+        
+        <div class="intro-text">
+            Através destas páginas, buscamos desmistificar conceitos, oferecer estratégias práticas e, acima de tudo, promover uma visão respeitosa e afirmativa da neurodiversidade. Cada pessoa é única, e este guia reconhece e celebra essa singularidade.
+        </div>
+        
+        <div class="intro-text">
+            Nosso objetivo é construir pontes de entendimento, oferecendo ferramentas que possam tornar o dia a dia mais acessível e menos sobrecarregante, sempre com base no respeito às diferenças e na valorização de cada jornada individual.
+        </div>
+        
+        <div class="page-count">
+            🔖 <strong>ESTE LIVRO POSSUI 7 CAPÍTULOS COMPLETOS</strong> além desta introdução, cada um abordando aspectos essenciais para a compreensão e apoio no espectro autista.
+        </div>
+        
+        <h2 style="color: #000000; margin-top: 40px; text-align: center;">ACESSE OS CAPÍTULOS:</h2>
+        
+        <div class="nav-links">
+            <a href="capitulo1.html" class="nav-button">Capítulo 1: Compreendendo o Espectro</a>
+            <a href="capitulo2.html" class="nav-button">Capítulo 2: Comunicação</a>
+            <a href="capitulo3.html" class="nav-button">Capítulo 3: Sensorial</a>
+            <a href="capitulo4.html" class="nav-button">Capítulo 4: Rotinas</a>
+            <a href="capitulo5.html" class="nav-button">Capítulo 5: Educação</a>
+            <a href="capitulo6.html" class="nav-button">Capítulo 6: Vida Adulta</a>
+            <a href="capitulo7.html" class="nav-button">Capítulo 7: Recursos</a>
+            <a href="sobre.html" class="nav-button">Sobre o Livro</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 Guia para Pessoas com Aspecto Autista. Todos os direitos reservados.</p>
+        <p>Este conteúdo visa educação e informação, não substituindo acompanhamento profissional.</p>
+    </div>
+
+    <script>
+        // Efeito simples de carregamento
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(function() {
+                document.body.style.opacity = '1';
+            }, 100);
+            
+            // Adiciona interatividade aos botões
+            const buttons = document.querySelectorAll('.nav-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
